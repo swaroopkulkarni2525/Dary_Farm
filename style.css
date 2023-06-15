@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    background-color: rgb(10, 7, 7);
+}
+
+.logoname {
+    text-align: left;
+    margin-left: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.navlinks {
+    text-align: center;
+    flex: 1;
+}
+
+.navlinks ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    color: white;
+}
+
+.navlinks ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.navlinks ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #e406d9;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navlinks ul li:hover::after {
+    width: 100%;
+}
+
+.navbutton {
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    background-color: #0d24f1;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.navbutton:hover {
+    order: 1px solid #3adf08;
+    background-color: red;
+    transition: 0.5s;
+}
+
+.home {
+    width: 100%;
+    background-image: url(./assets/happy-cows-gb90f2d99b_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+
+.home-cont {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+#coverimage {
+    float: right;
+    height: 400px;
+    width: 550px;
+    margin-top: 20%
+}
+
+.content>h1 {
+    font-weight: 500;
+    font-size: 36px;
+    margin-top: 100px;
+    margin-top: 20%;
+    padding-left: 10%;
+    padding-top: 10%;
+    margin-left: 5%;
+    justify-content: flex-start;
+}
+
+.content>p {
+    padding-left: 5%;
+    padding-top: 12px;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.Numbers {
+    clear: left;
+    float: right;
+    border: 1px solid rgb(241, 227, 227);
+    background: white;
+    margin-right: 10%;
+    padding-bottom: 8%;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 16px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.Ourstats {
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+.data::after {
+    box-shadow: 2px 2px rgb(177, 170, 170);
+}
+
+.data ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+}
+
+.content>h1 {
+    font-weight: 600;
+    font-size: 40px;
+    margin: auto;
+    padding-left: 18%;
+    padding-top: 20%;
+}
+
+.content>p {
+    margin: auto;
+    padding-left: 18%;
+    padding-top: 12px;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.homebutton {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 2px solid #0b46e6;
+    background: #0b46e6;
+    font-size: 22px;
+    margin-top: 30px;
+    margin-left: 18%;
+    padding: 15px 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.homebutton:hover {
+    border: 1px solid #25dd0d;
+    background: red;
+    transition: 1s;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+.dashboard {
+    background-color: rgb(161, 161, 15);
+}
+
+.dashboard .dash {
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.dashboard .dash .column1 {
+    background-color: rgba(#949496, 0.3);
+    border-radius: 0.5em;
+    margin: 0.5em;
+    padding: 2em;
+    font-size: 1.2em;
+    width: 40%;
+}
+
+.dashboard .dash .column1 #board {
+    color: white;
+    padding: 1em;
+    font-size: 18px;
+    border-radius: 0.5em;
+}
+
+.dashboard .dash .column1 .title1,
+.column2 .title1 {
+    font-size: 2em;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.dashboard .dash .column2 {
+    border-radius: 0.5em;
+    padding: 1em;
+    margin: 0.5em;
+    background-color: rgba(#949496, 0.3);
+    width: 50%;
+    border: 1px solid #fff;
+}
+
+.dashboard .dash .column2 div {
+    margin: 5px;
+}
+
+.dashboard .dash .column2 .subtitle {
+    font-size: x-large;
+    color: rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.dashboard .dash .sheds {
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 10%;
+    padding-bottom: 5%; */
+    margin-top: 5%;
+}
+
+.dashboard .dash .sheds input[type=text] {
+    border: none;
+    padding: 0.7em;
+    border-radius: 0.2em;
+    /* padding: 10px 5px 5px 10px; */
+}
+
+.dashboard .dash .sheds input[type=text]:focus {
+    border: none;
+    /* padding: 10px 5px 5px 10px; */
+}
+
+.dashboard .dash button {
+    color: white;
+    background-color: rgb(43, 42, 42);
+    border: none;
+    font-size: 1.3em;
+    border-radius: 5px;
+    padding: 0.5em;
+    float: right;
+    margin-top: 0.3em;
+    width: 30%;
+}
+
+.dashboard .dash button:hover {
+    cursor: pointer;
+    background-color: #e82222;
+}
+
+.dashboard .button:focus {
+    border: none;
+}
+
+#Gallery {
+    text-align: left;
+    font-weight: 600;
+    margin-left: 15%;
+    margin-bottom: 14px;
+    padding-top: 5%;
+    /* padding-bottom: 5%; */
+}
+
+.items {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+    margin-left: 15%;
+    padding-bottom: 5%;
+    align-items: center;
+    /* padding-left: 5%;
+    padding-right: 5%; */
+}
+
+.items>h2 {
+    text-align: center;
+    font-size: 100;
+}
+
+#prod {
+    text-align: left;
+}
+
+#img {
+    width: 200px;
+    height: 200px;
+}
+
+.footer {
+    background: black;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10%;
+    margin-top: 16px;
+}
+
+.logo>h1 {
+    color: white;
+    font-weight: 900;
+    font-size: 36px;
+    padding-left: 18px;
+}
+
+.logo>p {
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+    padding-left: 18px;
+    padding-bottom: 10px;
+}
+
+.maziwa>h1 {
+    color: white;
+    font-weight: 200;
+    padding-top: 16px;
+    padding-bottom: 10px;
+    font-size: 26px;
+}
+
+.maziwa .fa {
+    background: white;
+    padding: 3px;
+    margin-left: 20%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.maziwa ul li {
+    list-style: none;
+    color: white;
+    padding: 4px 4px 4px 4px;
+}
+
+.maziwa ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+button {
+    margin-top: 20px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+}
+
+a {
+    color: #007bff;
+}
+
+
+/*login form*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(237, 230, 230);
+}
+
+button {
+    margin-top: 20px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+}
+
+a {
+    color: #007bff;
+}
+
+.Sign {
+    background-color: #cfcfe2;
+    background-image: url("/DairyBusiness/assets/background\ .jpg");
+}
+
+.order {
+    background-image: url("/DairyBusiness/assets/order\ back1.jpg");
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dairy Farm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logoname"> Dairy Farm</div>
+        <div class="navlinks">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Reach Out</a></li>
+            </ul>
+        </div>
+        <div class="button">
+            <a href="/DairyBusiness/login.html" class="navbutton">Get Started</a>
+        </div>
+    </nav>
+    <div class="home">
+        <div class="home-cont">
+            <div class="content">
+                <h1> Dairy Farm</h1>
+                <p>Your Number One Fresh Milk Provider</p>
+                <a href="/DairyBusiness/makeorder.html" class="homebutton">Make an Order</a>
+            </div>
+            <div class="coverimage">
+                <img id="coverimage" src="./assets/empty-attic-g2bca0e3e5_1920.jpg" alt="">
+            </div>
+        </div>
+        <div class="Numbers">
+            <div class="data">
+                <div class="Ourstats">
+                    <ul>
+                        <li>1000+ <br> Litres Per Day</li>
+                    </ul>
+                </div>
+                <div class="Ourstats">
+                    <ul>
+                        <li>10,000+<br> Consumers</li>
+                    </ul>
+                </div>
+                <div class="Ourstats">
+                    <ul>
+                        <li>100+ <br> Processing Supliers</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1 class="heading">DASHBOARD</h1>
+    </div>
+    <section class="dashboard">
+        <div class="dash">
+            <div class="column1">
+                <span class="title1">Daily Production in Litres</span>
+                <div id='board'></div>
+                <form id="values" onsubmit="totalProduction(); event.preventDefault(); ">
+                    <div class="sheds">
+                        <label>Production in Shed A</label>
+                        <input type="text" id='shedA' class="form-control">
+                    </div>
+
+                    <div class="sheds">
+                        <label>Production in Shed B </label>
+                        <input type="text" id='shedB' class="form-control">
+                    </div>
+
+                    <div class="sheds">
+                        <label>Production in Shed C</label>
+                        <input type="text" id='shedC' class="form-control">
+                    </div>
+
+                    <div class="sheds">
+                        <label> Production in Shed D </label>
+                        <input type="text" id='shedD' class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="column2">
+                <span class="title1">Production and Sales</span>
+                <div id="produce">
+                    <table class="table table-dark">
+                        <div id="produce-div"></div>
+                        <thead>
+                            <tr id="produce-header"> </tr>
+                        </thead>
+                        <tbody id="produce-body">
+                        </tbody>
+                    </table>
+                </div>
+                <div id="outcome">
+                    <table class="table table-dark">
+                        <div id="leapYear-div"></div>
+                        <thead>
+                            <tr id="leapYear-headers"> </tr>
+                        </thead>
+                        <tbody id="leapYear">
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-dark">
+                        <div id="caption-div"></div>
+                        <thead>
+                            <tr id="comparison-headers"> </tr>
+                        </thead>
+                        <tbody id="comparison">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h1 id="Gallery"><u class="u">Products Gallery</u></h1>
+    <div class="items">
+        <div class="sec">
+            <img id="img" src="./assets/pexels-ella-olsson-3026801.jpg" alt="">
+            <h2 id="prod">yorghut</h2>
+
+        </div>
+        <div class="sec">
+            <img id="img" src="./assets/pexels-markus-spiske-94443.jpg">
+            <h2 id="prod"> Butter</h2>
+
+        </div>
+        <div class="sec">
+            <img id="img" src="./assets/pexels-karolina-grabowska-4198018.jpg">
+            <h2 id="prod"> Cheese</h2>
+
+        </div>
+        <div class="sec">
+            <img id="img" src="./assets/berries-g0565cdd34_1920.jpg">
+            <h2 id="prod"> Milkshake</h2>
+
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="foot">
+            <div class="maziwa">
+                <div class="logo">
+                    <h1> Dairy</h1>
+                    <p>Quality Dairy Milk <br> Make your order today</p>
+                </div>
+            </div>
+            <div class="maziwa">
+                <h1> Company</h1>
+                <ul>
+                    <li><a href=""> About</a></li>
+                    <li><a href=""> Dashboard</a></li>
+                    <li><a href=""> Reach out</a></li>
+
+                </ul>
+
+            </div>
+            <div class="maziwa">
+                <h1> Dairy Products</h1>
+                <ul>
+                    <li><a href=""> Milk</a></li>
+                    <li><a href=""> Yorghut</a></li>
+                    <li><a href=""> Butter</a></li>
+                    <li><a href=""> Cheese</a></li>
+                </ul>
+            </div>
+            <div class="maziwa">
+                <h1> Others</h1>
+                <ul>
+                    <li><a href=""> FAQs</a></li>
+                    <li><a href=""> Terms Of Services</a></li>
+                    <li><a href=""> Privacy and Policy</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
